@@ -162,13 +162,13 @@ html{
     margin-top: 46px;
     /* 50% cua chinh no' chieu cao = 50% chieu rong*/
     padding-top: 50%;
-    background: url('/assets/img/places/bp-poster.jpggit') top center / cover no-repeat;
+    background: url('https://i.redd.it/9g7jo1550on51.jpg') top center / cover no-repeat;
 
 }
 #slider .text-content {
     position: absolute;
     bottom: 47px;
-    color:black;
+    color:pink;
     /* left: 50%;
     transform: translateX(-50%); */
     width: 100%;
@@ -182,7 +182,7 @@ html{
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
-    color: black;
+    color: pink;
 }
 #content{
     height: auto;
