@@ -1,0 +1,390 @@
+/* Reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Common */
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-fourth{
+    width: 25%;
+}
+.col-full{
+    width: 100%;
+}
+.clear {
+    clear: both;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color:#000;
+    background-color: #ccc;
+}
+.pull-right{
+    float: right  !important;
+}
+.text-white{
+    color:#fff !important;
+    /* Important uu tien nhat */
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+
+/* Main */
+#main{
+
+}
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+#nav , .subnav{
+    list-style-type: none;
+}
+/* Chi thang li cap 1 */
+#nav > li{
+    display: inline-block;
+}
+#nav li{
+    position: relative  ;
+}
+#nav>li>a{
+    color:#fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#nav li:hover .subnav{
+    display:block;
+}
+#nav >li:hover > a,#nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav .subnav
+{
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/* tat ca the a trong subnav */
+#nav .subnav a{
+    color:#000;
+    padding: 0 12px;
+    left: 0;
+    line-height: 38px;
+}
+#nav .nav-arrow-down
+{
+    font-size: 14px;
+
+}
+
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+     /* Thay doi thuoc tinh con tro chuot */
+     cursor: pointer;
+}
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+#slider{
+    min-height: 500px;
+    /* Truc toa do. goc' tren dang` trai' */
+    position: relative;
+    /* De bo truong hop header de` len slider, slider chiem' lay' vi. tri' dau` cua heaeder */
+/* Line height cua header la 43px nen margin top = 46 */
+    margin-top: 46px;
+    /* 50% cua chinh no' chieu cao = 50% chieu rong*/
+    padding-top: 50%;
+    background: url('/assets/img/bp-poster.jpg') top center / cover no-repeat;
+
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color:black;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading {
+    /* Giam do. day` chu~ */
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+    color: black;
+}
+#content{
+    height: auto;
+    background-color: #fff;
+
+}
+#content .logo-header{
+    width: 100%;
+    
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    /* De khoang cach cac chu~ xa ra */
+    letter-spacing: 4px; 
+    text-transform: uppercase;
+    
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    margin-top: 25px;
+    /* Font chu~ nghieng */
+    font-style: italic;
+/* Do trong suot giu~ lai 60% do. trong suot' cua~ no' */
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+#content .about-text{
+    font-size: 15px;
+    margin-top :25px;
+    /* Canh deu` 2 ben  */
+    text-align: justify;
+    /* Tieng anh la` 1.4, tieng' viet. la` 1.6 */
+    line-height: 1.4;
+}
+#content .section-heading,
+#content .section-sub-heading{
+    text-align: center;
+}
+#content .content-section{
+    width: 800px;
+    /* 64 +48px o places-list */
+    padding: 64px 0 112px;
+    /* Day text ra giua~ */
+    margin-left: auto;
+    margin-right:auto;
+}
+/* 
+#content .member-item{
+    float: left;
+    Co' 4 member- item ==> 100/4 = 25%
+    width: 25%;
+    text-align: center;
+} */
+
+#content .member-list{
+    margin-top: 48px;
+}
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+    height: 150px;
+}
+
+/* Tour section */
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list {
+    list-style: none;
+    background-color: #fff;
+    margin-top: 40px;
+
+}
+
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity{
+    line-height: 24px;
+    float: right;
+    width: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -3px;   
+}
+
+
+/* Palace section */
+.places-list{
+    /* Dung` row vs col */
+    margin-top: 32px;
+    /* Dung` trong class chung roi */
+    /* padding-bottom: 48px; */
+}
+/* Dung` row vs col */
+/* .places-item{
+    Dung` row vs col 
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+} */
+.place-img{
+    /* Nam` gon. */
+    width: 100%;
+    height: 150px;
+    /* Co khoang cach giua~ img vs body */
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    padding: 16px;
+    background-color: #fff;
+    font-size: 15px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+
+/* Contact */
+.contact-content{
+    margin-top: 48px;
+    /* margin-bottom: 48px; */
+}
+
+.contact-info{
+    font-size: 18px;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* Map section */
+.map-section img{
+    width: 100%;
+}
+/* Footer section */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list{
+    font-size: 24px;
+}
+
+#footer .social-list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+#footer .copy-right a:hover,
+#footer .social-list a:hover{
+    color: rgba(0,0,0,0.4);
+}
+#footer .copy-right{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);   
+}
+#footer .copy-right a{
+    color: rgba(0,0,0,0.6);
+}
