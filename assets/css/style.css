@@ -162,7 +162,7 @@ html{
     margin-top: 46px;
     /* 50% cua chinh no' chieu cao = 50% chieu rong*/
     padding-top: 50%;
-    background: url('/assets/img/bp-poster.jpg') top center / cover no-repeat;
+    background: url('/assets/img/places/bp-poster.jpg') top center / cover no-repeat;
 
 }
 #slider .text-content {
